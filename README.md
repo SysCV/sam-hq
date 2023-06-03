@@ -35,7 +35,7 @@ Note: For box-prompting-based evaluation, we feed SAM and our HQ-SAM with the sa
 
 ### Various ViT backbones on COCO:
 ![backbones](figs/sam_vs_hqsam_backbones.png)
-Note: For the COCO dataset, we use a SOTA detector FocalNet-DINO~\cite{dino} trained on the COCO dataset as our box prompt generator.
+Note: For the COCO dataset, we use a SOTA detector FocalNet-DINO trained on the COCO dataset as our box prompt generator.
 
 ### YTVIS and HQ-YTVIS
 Note:Using ViT-L backbone. We adopt the SOTA detector Mask2Former trained on the YouTubeVIS 2019 dataset as our video boxes prompt generator while reusing its object association prediction.
@@ -44,3 +44,15 @@ Note:Using ViT-L backbone. We adopt the SOTA detector Mask2Former trained on the
 ### DAVIS
 Note: Using ViT-L backbone. We adopt the SOTA model XMem as our video boxes prompt generator while reusing its object association prediction.
 ![davis](figs/davis.png)
+
+Citation
+---------------
+If you find HQ-SAM useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
+```
+@inproceedings{sam_hq,
+    author={Ke, Lei and Ye, Mingqiao and Danelljan, Martin and Liu, Yifan and Tai, Yu-Wing and Tang, Chi-Keung and Yu, Fisher},
+    title={Segment Anything in High Quality},
+    booktitle = {arXiv},
+    year = {2023}
+}  
+```
