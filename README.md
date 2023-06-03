@@ -14,6 +14,7 @@ The recent Segment Anything Model (SAM) represents a big leap in scaling up segm
 
 Visual comparison between SAM and HQ-SAM
 -----------------
+**SAM vs. HQ-SAM**
 <table>
   <tr>
     <td><img src="visual_demo/1.gif" width="250"></td>
