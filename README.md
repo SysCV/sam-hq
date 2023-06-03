@@ -2,6 +2,7 @@
 
 > [**Segment Anything in High Quality**]()           
 > Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
+> ETH Zurich & HKUST \
 > arXiv
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our paper for more details. Our code and models will be released soon. Stay tuned!
