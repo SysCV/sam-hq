@@ -10,12 +10,14 @@ Visual comparison between SAM and HQ-SAM
 -----------------
 <table>
   <tr>
-    <td><img src="vis_demos/example1.gif" width="350"></td>
-    <td><img src="vis_demos/example2.gif" width="350"></td>
+    <td><img src="visual_demo/1.gif" width="200"></td>
+    <td><img src="visual_demo/2.gif" width="200"></td>
+    <td><img src="visual_demo/3.gif" width="200"></td>
   </tr>
   <tr>
-    <td><img src="vis_demos/example3.gif" width="350"></td>
-    <td><img src="vis_demos/example4.gif" width="350"></td>
+    <td><img src="visual_demo/4.gif" width="200"></td>
+    <td><img src="visual_demo/5.gif" width="200"></td>
+    <td><img src="visual_demo/6.gif" width="200"></td>
   </tr>
 </table>
 
