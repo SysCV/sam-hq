@@ -1,6 +1,6 @@
 # Segment Anything in High Quality
 
-> [**Mask-Free Video Instance Segmentation**]()           
+> [**Segment Anything in High Quality**]()           
 > Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
 > arXiv
 
