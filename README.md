@@ -58,3 +58,6 @@ If you find HQ-SAM useful in your research or refer to the provided baseline res
     year = {2023}
 }  
 ```
+
+## Acknowledgments
+- Thanks [SAM](https://github.com/facebookresearch/segment-anything) for their public code and released models.
