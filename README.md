@@ -1,9 +1,8 @@
 # Segment Anything in High Quality
 
-> [**Segment Anything in High Quality**]()           
+> [**Segment Anything in High Quality**](https://arxiv.org/abs/2306.01567)           
 > Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
-> ETH Zurich & HKUST \
-> arXiv
+> ETH Zurich & HKUST 
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our paper for more details. Our code and models will be released soon. Stay tuned!
 
@@ -55,7 +54,7 @@ If you find HQ-SAM useful in your research or refer to the provided baseline res
 @article{sam_hq,
     title={Segment Anything in High Quality},
     author={Ke, Lei and Ye, Mingqiao and Danelljan, Martin and Liu, Yifan and Tai, Yu-Wing and Tang, Chi-Keung and Yu, Fisher},
-    journal = {arXiv:xxxx.xxxxx},
+    journal = {arXiv:2306.01567},
     year = {2023}
 }  
 ```
