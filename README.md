@@ -47,6 +47,10 @@ Note:Using ViT-L backbone. We adopt the SOTA detector Mask2Former trained on the
 Note: Using ViT-L backbone. We adopt the SOTA model XMem as our video boxes prompt generator while reusing its object association prediction.
 ![davis](figs/davis.png)
 
+ ### Interactive segmentation comparison using various points
+Note:Using ViT-L backbone. On the high-quality COIFT (zero-shot) and DIS val set. 
+![point_comp](figs/points_comp.png)
+
 Citation
 ---------------
 If you find HQ-SAM useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
