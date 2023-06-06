@@ -4,7 +4,7 @@
 > Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
 > ETH Zurich & HKUST 
 
-We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our paper for more details. Our code and models will be released soon. Stay tuned!
+We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our paper for more details. Our code and models will be released in two weeks. Stay tuned!
 
 Visual comparison between SAM and HQ-SAM
 -----------------
