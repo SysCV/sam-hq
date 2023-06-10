@@ -64,4 +64,4 @@ If you find HQ-SAM useful in your research or refer to the provided baseline res
 ```
 
 ## Acknowledgments
-- Thanks [SAM](https://github.com/facebookresearch/segment-anything) for their public code and released models.
+- Thanks to [SAM](https://github.com/facebookresearch/segment-anything) for their public code and released models.
