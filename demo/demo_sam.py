@@ -52,7 +52,6 @@ def show_res_multi(masks, scores, input_point, input_label, input_box, filename,
     for score in scores:
         print(f"Score: {score:.3f}")
     plt.axis('off')
-    filename = result_path + 'example'+str(i)
     plt.savefig(filename +'.png',bbox_inches='tight',pad_inches=-0.1)
     plt.close()
 

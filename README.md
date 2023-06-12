@@ -116,7 +116,7 @@ predictor.set_image(<your_image>)
 masks, _, _ = predictor.predict(<input_prompts>)
 ```
 
-Additionally, see the usage examples in our [demo](/demo/demo_hqsam.py).
+Additionally, see the usage examples in our [demo](/demo/demo_hqsam.py) and [colab notebook](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing).
 
 ```
 python demo/demo_hqsam.py
