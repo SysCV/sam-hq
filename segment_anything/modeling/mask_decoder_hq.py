@@ -1,4 +1,5 @@
 # Copyright (c) Meta Platforms, Inc. and affiliates.
+# Modified by HQ-SAM team
 # All rights reserved.
 
 # This source code is licensed under the license found in the
