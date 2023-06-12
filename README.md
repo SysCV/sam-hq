@@ -8,6 +8,8 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
+:fire::fire: We released the [colab notebook demo](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing).
+
 :fire::fire: We released the [model checkpoints](#model-checkpoints) and [demo visualization codes](#getting-started).
 
 Visual comparison between SAM and HQ-SAM
