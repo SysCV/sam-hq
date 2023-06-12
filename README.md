@@ -6,6 +6,10 @@
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our [paper](https://arxiv.org/abs/2306.01567) for more details.
 
+Updates
+-----------------
+:fire::fire: We released the [model checkpoints](#model-checkpoints) and [demo visualization codes](#getting-started).
+
 Visual comparison between SAM and HQ-SAM
 -----------------
 **SAM vs. HQ-SAM**
