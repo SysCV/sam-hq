@@ -8,7 +8,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-Todo: - [ ] Release SAM tuning instuctions and HQSeg-44K data.
+:climbing: Todo: Release SAM tuning instuctions and HQSeg-44K data.
 
 :fire::fire: We released the [ONNX export script](#onnx-export) and [colab notebook](https://colab.research.google.com/drive/11U2La49c2IxahzJkAV-EzPqEH3cz_5hq?usp=sharing) for exporting and using ONNX model.
 
