@@ -8,7 +8,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-:climbing: Todo: Release SAM tuning instuctions and HQSeg-44K data.
+:fire::fire: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
 
 :fire: HQ-SAM is adopted in [SAM-PT](https://github.com/SysCV/sam-pt) to improve the SAM-based zero-shot video segmentation performance.
 
@@ -138,6 +138,12 @@ To obtain baseline SAM's visual result. Note that you need to download original 
 python demo/demo_sam.py
 ```
 
+### **HQ-SAM Tuning and HQ-Seg44k Data**
+We provide detailed training, evaluation, visualization and data downloading instructions in [HQ-SAM training](train/README.md).
+Please change the current folder path to:
+```
+cd train
+```
 
 ### **ONNX export**
 HQ-SAM's lightweight mask decoder can be exported to ONNX format so that it can be run in any environment that supports ONNX runtime. Export the model with
