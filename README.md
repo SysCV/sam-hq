@@ -8,17 +8,17 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-:fire::fire: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
+:fire::fire: 2023/07/05: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
 
-:fire: HQ-SAM is adopted in [SAM-PT](https://github.com/SysCV/sam-pt) to improve the SAM-based zero-shot video segmentation performance.
+2023/07/04: HQ-SAM is adopted in [SAM-PT](https://github.com/SysCV/sam-pt) to improve the SAM-based zero-shot video segmentation performance.
 
-:fire: We released the [ONNX export script](#onnx-export) and [colab notebook](https://colab.research.google.com/drive/11U2La49c2IxahzJkAV-EzPqEH3cz_5hq?usp=sharing) for exporting and using ONNX model.
+2023/06/28: We released the [ONNX export script](#onnx-export) and [colab notebook](https://colab.research.google.com/drive/11U2La49c2IxahzJkAV-EzPqEH3cz_5hq?usp=sharing) for exporting and using ONNX model.
 
-:fire: Play with HQ-SAM demo at [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sam-hq-team/sam-hq), supported by [Huggingface Spaces](https://huggingface.co/spaces), which supports point, box and text prompts.
+2023/06/23: Play with HQ-SAM demo at [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sam-hq-team/sam-hq), supported by [Huggingface Spaces](https://huggingface.co/spaces), which supports point, box and text prompts.
 
-:fire: We released the [colab notebook demo](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing) and [automatic mask generator notebook](https://colab.research.google.com/drive/1dhRq4eR6Fbl-yl1vbQvU9hqyyeOidQaU?usp=sharing).
+2023/06/14: We released the [colab notebook demo](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing) and [automatic mask generator notebook](https://colab.research.google.com/drive/1dhRq4eR6Fbl-yl1vbQvU9hqyyeOidQaU?usp=sharing).
 
-:fire: We released the [model checkpoints](#model-checkpoints) and [demo visualization codes](#getting-started).
+2023/06/13: We released the [model checkpoints](#model-checkpoints) and [demo visualization codes](#getting-started).
 
 Visual comparison between SAM and HQ-SAM
 -----------------
@@ -140,10 +140,12 @@ python demo/demo_sam.py
 
 ### **HQ-SAM Tuning and HQ-Seg44k Data**
 We provide detailed training, evaluation, visualization and data downloading instructions in [HQ-SAM training](train/README.md).
+
 Please change the current folder path to:
 ```
 cd train
 ```
+and then refer to detailed [readme instruction](train/README.md).
 
 ### **ONNX export**
 HQ-SAM's lightweight mask decoder can be exported to ONNX format so that it can be run in any environment that supports ONNX runtime. Export the model with
