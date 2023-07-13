@@ -8,13 +8,15 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
+:trophy::1st_place_medal: 2023/07/14: Grounded HQ-SAM obtains the **first place**:1st_place_medal: in the [Segmentation in the Wild](https://eval.ai/web/challenges/challenge-page/1931/leaderboard/4567) competition on zero-shot track, outperforming Grounded SAM. Refer to our [SegInW evaluation](#grounded-hq-sam-vs-grounded-sam-on-seginw) for more details.
+
 :fire::fire: 2023/07/05: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
 
-2023/07/04: HQ-SAM is adopted in [SAM-PT](https://github.com/SysCV/sam-pt) to improve the SAM-based zero-shot video segmentation performance. Also, HQ-SAM is used in [Grounded-SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) and [Inpaint Anything](https://github.com/Uminosachi/sd-webui-inpaint-anything).
+2023/07/04: HQ-SAM is adopted in [SAM-PT](https://github.com/SysCV/sam-pt) to improve the SAM-based zero-shot video segmentation performance.
 
 2023/06/28: We released the [ONNX export script](#onnx-export) and [colab notebook](https://colab.research.google.com/drive/11U2La49c2IxahzJkAV-EzPqEH3cz_5hq?usp=sharing) for exporting and using ONNX model.
 
-2023/06/23: Play with HQ-SAM demo at [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sam-hq-team/sam-hq), which supports point, box and text prompts.
+2023/06/23: Play with HQ-SAM demo at [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sam-hq-team/sam-hq), supported by [Huggingface Spaces](https://huggingface.co/spaces), which supports point, box and text prompts.
 
 2023/06/14: We released the [colab notebook demo](https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing) and [automatic mask generator notebook](https://colab.research.google.com/drive/1dhRq4eR6Fbl-yl1vbQvU9hqyyeOidQaU?usp=sharing).
 
@@ -147,6 +149,48 @@ cd train
 ```
 and then refer to detailed [readme instruction](train/README.md).
 
+### **Grounded HQ-SAM vs Grounded SAM on [SegInW](https://eval.ai/web/challenges/challenge-page/1931/overview?ref=blog.roboflow.com)**
+
+Grounded HQ-SAM wins the **first place**:1st_place_medal: on SegInW benchmark (consist of 25 public zero-shot in the wild segmentation datasets), and outpuerforming Grounded SAM using the same grounding-dino detector.
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Model Name</th>
+<th valign="bottom">SAM</th>
+<th valign="bottom">GroundingDINO</th>
+<th valign="bottom">Mean AP</th>
+<th valign="bottom">Evaluation Script</th>
+<th valign="bottom">Log</th>
+<th valign="bottom">Output Json</th>
+<!-- TABLE BODY -->
+<!-- ROW: maskformer2_R50_bs16_50ep -->
+ <tr><td align="left">Grounded SAM</td>
+<td align="center">vit-h</td>
+<td align="center">swin-b</td>
+<td align="center">48.7</td>
+<td align="center"><a href="seginw/test_seginw.sh">script</a></td>
+<td align="center"><a href="seginw/logs/grounded_sam.log">log</a></td>
+<td align="center"><a href="https://huggingface.co/sam-hq-team/SegInW/resolve/main/result/grounded_sam.zip">result</a></td>
+</tr>
+<!-- ROW: maskformer2_R101_bs16_50ep -->
+ <tr><td align="left">Grounded HQ-SAM</td>
+<td align="center">vit-h</td>
+<td align="center">swin-b</td>
+<td align="center"><b>49.6</b></td>
+<td align="center"><a href="seginw/test_seginw_hq.sh">script</a></td>
+<td align="center"><a href="seginw/logs/grounded_hqsam.log">log</a></td>
+<td align="center"><a href="https://huggingface.co/sam-hq-team/SegInW/resolve/main/result/grounded_hqsam.zip">result</a></td>
+</tr>
+</tbody></table>
+
+Please change the current folder path to:
+```
+cd seginw
+```
+We provide detailed evaluation instructions and metrics on SegInW in [Grounded-HQ-SAM evaluation](seginw/README.md).
+
+
 ### **ONNX export**
 HQ-SAM's lightweight mask decoder can be exported to ONNX format so that it can be run in any environment that supports ONNX runtime. Export the model with
 ```
@@ -168,4 +212,4 @@ If you find HQ-SAM useful in your research or refer to the provided baseline res
 ```
 
 ## Acknowledgments
-- Thanks [SAM](https://github.com/facebookresearch/segment-anything) for their public code and released models.
+- Thanks [SAM](https://github.com/facebookresearch/segment-anything) and [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) for their public code and released models.
