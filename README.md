@@ -1,5 +1,7 @@
 # Segment Anything in High Quality
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/segment-anything-in-high-quality/zero-shot-segmentation-on-segmentation-in-the)](https://paperswithcode.com/sota/zero-shot-segmentation-on-segmentation-in-the?p=segment-anything-in-high-quality)
+
 > [**Segment Anything in High Quality**](https://arxiv.org/abs/2306.01567)           
 > Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
 > ETH Zurich & HKUST 
