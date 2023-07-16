@@ -10,6 +10,8 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
+:rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using vit-tiny as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
+
 :trophy::1st_place_medal: 2023/07/14: Grounded **HQ-SAM** obtains the **first place**:1st_place_medal: in the [Segmentation in the Wild](https://eval.ai/web/challenges/challenge-page/1931/leaderboard/4567) competition on zero-shot track, outperforming Grounded SAM. Refer to our [SegInW evaluation](#grounded-hq-sam-vs-grounded-sam-on-seginw) for more details.
 
 :fire::fire: 2023/07/05: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
@@ -117,6 +119,7 @@ Click the links below to download the checkpoint for the corresponding model typ
 - `vit_b`: [ViT-B HQ-SAM model.](https://drive.google.com/file/d/11yExZLOve38kRZPfRx_MRxfIAKmfMY47/view?usp=sharing)
 - `vit_l`: [ViT-L HQ-SAM model.](https://drive.google.com/file/d/1Uk17tDKX1YAKas5knI4y9ZJCo0lRVL0G/view?usp=sharing)
 - `vit_h`: [ViT-H HQ-SAM model.](https://drive.google.com/file/d/1qobFYrI4eyIANfBSmYcGuWRaSIXfMOQ8/view?usp=sharing)
+- `vit_tiny` (Light HQ-SAM for real-time need): [ViT-Tiny HQ-SAM model.](https://drive.google.com/file/d/1LbVqcUDgjLR_lMQ0UDcmg-JuTL0YTw0v/view?usp=sharing)
 
 ### **Getting Started**
 
@@ -140,6 +143,11 @@ python demo/demo_hqsam.py
 To obtain baseline SAM's visual result. Note that you need to download original SAM checkpoint from [baseline-SAM-L model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth) and put it into the pretrained_checkpoint folder.
 ```
 python demo/demo_sam.py
+```
+
+To obtain Light HQ-SAM's visual result:
+```
+python demo/demo_hqsam_light.py
 ```
 
 ### **HQ-SAM Tuning and HQ-Seg44k Data**
@@ -192,6 +200,45 @@ cd seginw
 ```
 We provide detailed evaluation instructions and metrics on SegInW in [Grounded-HQ-SAM evaluation](seginw/README.md).
 
+### **Light HQ-SAM vs MobileSAM on COCO**
+We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encoder provided by MobileSAM. We provide quantitative comparison on zero-shot COCO performance, speed and memory below.
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Model</th>
+<th valign="bottom">AP</th>
+<th valign="bottom">AP@L</th>
+<th valign="bottom">AP@M</th>
+<th valign="bottom">AP@S</th>
+<th valign="bottom">Model Params (MB)</th>
+<th valign="bottom">FPS</th>
+<th valign="bottom">Memory (GB)</th>
+<!-- TABLE BODY -->
+<!-- ROW: maskformer2_R50_bs16_50ep -->
+ <tr><td align="left">MobileSAM</td>
+<td align="center">42.4</td>
+<td align="center">58.5</td>
+<td align="center">46.0</td>
+<td align="center">28.1</td>
+<td align="center">38.6</td>
+<td align="center">44.8</td>
+<td align="center">3.7</td>
+</tr>
+<!-- ROW: maskformer2_R101_bs16_50ep -->
+ <tr><td align="left"><b>Light HQ-SAM</b></td>
+<td align="center"><b>43.3</b></td>
+<td align="center">59.4</td>
+<td align="center">47.1</td>
+<td align="center">28.5</td>
+<td align="center">40.3</td>
+<td align="center">41.2</td>
+<td align="center">3.7</td>
+</tr>
+</tbody></table>
+
+Note: For the COCO dataset, we use the same SOTA detector FocalNet-DINO trained on the COCO dataset as our and Mobile sam's box prompt generator.
+
 
 ### **ONNX export**
 HQ-SAM's lightweight mask decoder can be exported to ONNX format so that it can be run in any environment that supports ONNX runtime. Export the model with
@@ -214,4 +261,4 @@ If you find HQ-SAM useful in your research or refer to the provided baseline res
 ```
 
 ## Acknowledgments
-- Thanks [SAM](https://github.com/facebookresearch/segment-anything) and [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) for their public code and released models.
+- Thanks [SAM](https://github.com/facebookresearch/segment-anything), [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) and [MobileSAM](https://github.com/ChaoningZhang/MobileSAM) for their public code and released models.
