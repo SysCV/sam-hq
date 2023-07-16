@@ -10,7 +10,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-:rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using vit-tiny as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
+:rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using TinyViT as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
 
 :trophy::1st_place_medal: 2023/07/14: Grounded **HQ-SAM** obtains the **first place**:1st_place_medal: in the [Segmentation in the Wild](https://eval.ai/web/challenges/challenge-page/1931/leaderboard/4567) competition on zero-shot track, outperforming Grounded SAM. Refer to our [SegInW evaluation](#grounded-hq-sam-vs-grounded-sam-on-seginw) for more details.
 
@@ -119,7 +119,7 @@ Click the links below to download the checkpoint for the corresponding model typ
 - `vit_b`: [ViT-B HQ-SAM model.](https://drive.google.com/file/d/11yExZLOve38kRZPfRx_MRxfIAKmfMY47/view?usp=sharing)
 - `vit_l`: [ViT-L HQ-SAM model.](https://drive.google.com/file/d/1Uk17tDKX1YAKas5knI4y9ZJCo0lRVL0G/view?usp=sharing)
 - `vit_h`: [ViT-H HQ-SAM model.](https://drive.google.com/file/d/1qobFYrI4eyIANfBSmYcGuWRaSIXfMOQ8/view?usp=sharing)
-- `vit_tiny` (Light HQ-SAM for real-time need): [ViT-Tiny HQ-SAM model.](https://drive.google.com/file/d/1LbVqcUDgjLR_lMQ0UDcmg-JuTL0YTw0v/view?usp=sharing)
+- `vit_tiny` (**Light HQ-SAM** for real-time need): [ViT-Tiny HQ-SAM model.](https://drive.google.com/file/d/1LbVqcUDgjLR_lMQ0UDcmg-JuTL0YTw0v/view?usp=sharing)
 
 ### **Getting Started**
 
