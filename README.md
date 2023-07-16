@@ -84,7 +84,7 @@ cd sam-hq; pip install -e .
 The following optional dependencies are necessary for mask post-processing, saving masks in COCO format, the example notebooks, and exporting the model in ONNX format. `jupyter` is also required to run the example notebooks.
 
 ```
-pip install opencv-python pycocotools matplotlib onnxruntime onnx
+pip install opencv-python pycocotools matplotlib onnxruntime onnx timm
 ```
 
 ### Example conda environment setup
@@ -92,7 +92,7 @@ pip install opencv-python pycocotools matplotlib onnxruntime onnx
 conda create --name sam_hq python=3.8 -y
 conda activate sam_hq
 conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.1 -c pytorch -c nvidia
-pip install opencv-python pycocotools matplotlib onnxruntime onnx
+pip install opencv-python pycocotools matplotlib onnxruntime onnx timm
 
 # under your working directory
 git clone https://github.com/SysCV/sam-hq.git
