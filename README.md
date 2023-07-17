@@ -167,7 +167,7 @@ Grounded HQ-SAM wins the **first place**:1st_place_medal: on SegInW benchmark (c
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom">Model Name</th>
-<th valign="bottom">SAM</th>
+<th valign="bottom">Encoder</th>
 <th valign="bottom">GroundingDINO</th>
 <th valign="bottom">Mean AP</th>
 <th valign="bottom">Evaluation Script</th>
@@ -207,6 +207,7 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom">Model</th>
+<th valign="bottom">Encoder</th>
 <th valign="bottom">AP</th>
 <th valign="bottom">AP@L</th>
 <th valign="bottom">AP@M</th>
@@ -217,6 +218,7 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 <!-- TABLE BODY -->
 <!-- ROW: maskformer2_R50_bs16_50ep -->
  <tr><td align="left">MobileSAM</td>
+<td align="center">TinyViT</td>
 <td align="center">42.4</td>
 <td align="center">58.5</td>
 <td align="center">46.0</td>
@@ -227,6 +229,7 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 </tr>
 <!-- ROW: maskformer2_R101_bs16_50ep -->
  <tr><td align="left"><b>Light HQ-SAM</b></td>
+ <td align="center">TinyViT</td>
 <td align="center"><b>43.3</b></td>
 <td align="center">59.4</td>
 <td align="center">47.1</td>
