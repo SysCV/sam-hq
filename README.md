@@ -50,10 +50,12 @@ The recent Segment Anything Model (SAM) represents a big leap in scaling up segm
 
 <img width="1096" alt="image" src='figs/sam-hf-framework.png'>
 
-
 Quantitative comparison between SAM and HQ-SAM
 -----------------
-Note: For box-prompting-based evaluation, we feed SAM and our HQ-SAM with the same image/video bounding boxes and adopt the single mask output mode of SAM. 
+Note: For box-prompting-based evaluation, we feed SAM, MobileSAM and our HQ-SAM with the same image/video bounding boxes and adopt the single mask output mode of SAM. 
+
+We provide comprehensive performance, model size and speed comparison as following:
+<img width="1096" alt="image" src='figs/sam_variants_comp.png'>
 
 ### Various ViT backbones on COCO:
 ![backbones](figs/sam_vs_hqsam_backbones.png)
