@@ -221,10 +221,10 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 <!-- ROW: maskformer2_R50_bs16_50ep -->
  <tr><td align="left">MobileSAM</td>
 <td align="center">TinyViT</td>
-<td align="center">42.4</td>
-<td align="center">58.5</td>
-<td align="center">46.0</td>
-<td align="center">28.1</td>
+<td align="center">44.3</td>
+<td align="center">61.8</td>
+<td align="center">48.1</td>
+<td align="center">28.8</td>
 <td align="center">38.6</td>
 <td align="center">44.8</td>
 <td align="center">3.7</td>
@@ -232,10 +232,10 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 <!-- ROW: maskformer2_R101_bs16_50ep -->
  <tr><td align="left"><b>Light HQ-SAM</b></td>
  <td align="center">TinyViT</td>
-<td align="center"><b>43.3</b></td>
-<td align="center">59.4</td>
-<td align="center">47.1</td>
-<td align="center">28.5</td>
+<td align="center"><b>45.0</b></td>
+<td align="center">62.8</td>
+<td align="center">48.8</td>
+<td align="center">29.2</td>
 <td align="center">40.3</td>
 <td align="center">41.2</td>
 <td align="center">3.7</td>
