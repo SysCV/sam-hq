@@ -230,7 +230,7 @@ We propose [Light HQ-SAM](#model-checkpoints) based on the tiny vit image encode
 <td align="center">3.7</td>
 </tr>
 <!-- ROW: maskformer2_R101_bs16_50ep -->
- <tr><td align="left">Light HQ-SAM</td>
+ <tr><td align="left"><b>Light HQ-SAM</b></td>
  <td align="center">TinyViT</td>
 <td align="center"><b>45.0</b></td>
 <td align="center">62.8</td>
