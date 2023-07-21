@@ -14,7 +14,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-2023/07/21: HQ-SAM is also supported in OpenXLab apps, thanks their support!
+2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support!
 
 :rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using TinyViT as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
 
