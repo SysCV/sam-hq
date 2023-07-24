@@ -62,6 +62,7 @@ if __name__ == "__main__":
     device = "cuda"
     sam = sam_model_registry[model_type](checkpoint=sam_checkpoint)
     sam.to(device=device)
+    sam.eval()
     predictor = SamPredictor(sam)
 
     for i in range(8):
