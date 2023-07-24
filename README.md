@@ -159,7 +159,7 @@ python demo/demo_hqsam_light.py
 ```
 
 ### **HQ-SAM Tuning and HQ-Seg44k Data**
-We provide detailed training, evaluation, visualization and data downloading instructions in [HQ-SAM training](train/README.md).
+We provide detailed training, evaluation, visualization and data downloading instructions in [HQ-SAM training](train/README.md). You can also replace our training data to obtain your own SAM in specific application domain (like medical, OCR and remote sensing).
 
 Please change the current folder path to:
 ```
