@@ -14,7 +14,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-2023/07/25: Light HQ-SAM is supported in the [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/), thanks the great help!
+2023/07/25: Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/), thanks the support!
 
 2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support!
 
