@@ -20,7 +20,7 @@ Updates
 
 :rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using TinyViT as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
 
-:trophy::1st_place_medal: 2023/07/14: Grounded **HQ-SAM** obtains the **first place**:1st_place_medal: in the [Segmentation in the Wild](https://eval.ai/web/challenges/challenge-page/1931/leaderboard/4567) competition on zero-shot track (hosted in [CVPR 2023 workshop](https://computer-vision-in-the-wild.github.io/cvpr-2023/)), outperforming Grounded SAM. Refer to our [SegInW evaluation](#grounded-hq-sam-vs-grounded-sam-on-seginw) for more details.
+:trophy::1st_place_medal: 2023/07/14: Grounded **HQ-SAM** obtains the **first place**:1st_place_medal: in the [Segmentation in the Wild](https://eval.ai/web/challenges/challenge-page/1931/leaderboard/4567) competition on zero-shot track (hosted in [CVPR 2023 workshop](https://computer-vision-in-the-wild.github.io/cvpr-2023/)), outperforming Grounded SAM. Refer to our [SGinW evaluation](#grounded-hq-sam-vs-grounded-sam-on-seginw) for more details.
 
 :fire::fire: 2023/07/05: We released [SAM tuning instuctions](#hq-sam-tuning-and-hq-seg44k-data) and [HQSeg-44K data](#hq-sam-tuning-and-hq-seg44k-data).
 
