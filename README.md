@@ -14,6 +14,8 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
+2023/08/11: Support [python package](#quick-installation-via-pip) for easier pip installation.
+
 2023/07/25: Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/), thanks the support!
 
 2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support!
@@ -81,7 +83,24 @@ Note: Using ViT-L backbone. We adopt the SOTA model XMem as our video boxes prom
 Note:Using ViT-L backbone. On the high-quality COIFT (zero-shot) and DIS val set. 
 ![point_comp](figs/points_comp.png)
 
-### **Installation**
+### **Quick Installation via pip**
+```
+pip install segment-anything-hq==0.1
+python
+from segment_anything_hq import sam_model_registry
+model_type = "<model_type>" #"vit_l/vit_b/vit_h/vit_tiny"
+sam_checkpoint = "<path/to/checkpoint>"
+sam = sam_model_registry[model_type](checkpoint=sam_checkpoint)
+```
+
+see specific usage example (such as vit-l) by running belowing command:
+```
+export PYTHONPATH=$(pwd)
+python demo/demo_hqsam_pip_example.py
+```
+
+
+### **Standard Installation**
 The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 
 Clone the repository locally and install with
