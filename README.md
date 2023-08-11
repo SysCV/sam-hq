@@ -85,7 +85,7 @@ Note:Using ViT-L backbone. On the high-quality COIFT (zero-shot) and DIS val set
 
 ### **Quick Installation via pip**
 ```
-pip install segment-anything-hq==0.1
+pip install segment-anything-hq
 python
 from segment_anything_hq import sam_model_registry
 model_type = "<model_type>" #"vit_l/vit_b/vit_h/vit_tiny"
