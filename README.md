@@ -7,7 +7,6 @@
 
 
 > [**Segment Anything in High Quality**](https://arxiv.org/abs/2306.01567)           
-> Lei Ke, Mingqiao Ye, Martin Danelljan, Yifan Liu, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu \
 > ETH Zurich & HKUST 
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our [paper](https://arxiv.org/abs/2306.01567) for more details.
@@ -80,10 +79,6 @@ Note:Using ViT-L backbone. We adopt the SOTA detector Mask2Former trained on the
 ### DAVIS
 Note: Using ViT-L backbone. We adopt the SOTA model XMem as our video boxes prompt generator while reusing its object association prediction.
 ![davis](figs/davis.png)
-
- ### Interactive segmentation comparison using various points
-Note:Using ViT-L backbone. On the high-quality COIFT (zero-shot) and DIS val set. 
-![point_comp](figs/points_comp.png)
 
 ### **Quick Installation via pip**
 ```
