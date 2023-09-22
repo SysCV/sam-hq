@@ -7,6 +7,7 @@
 
 
 > [**Segment Anything in High Quality**](https://arxiv.org/abs/2306.01567)           
+> NeurIPS 2023
 > ETH Zurich & HKUST 
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our [paper](https://arxiv.org/abs/2306.01567) for more details.
