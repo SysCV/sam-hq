@@ -14,6 +14,8 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
+2023/11/06: HQ-SAM is adopted to annotate the Grounding-anything Dataset proposed by [GLaMM](https://arxiv.org/abs/2311.03356).
+
 2023/10/15: HQ-SAM is supported in the [OpenMMLab PlayGround](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md) for annotation with Label-Studio.
 
 2023/09/28: HQ-SAM is in [ENIGMA-51](https://iplab.dmi.unict.it/ENIGMA-51/) for annotating egocentric industrial data, with SAM comparison in [paper](https://arxiv.org/abs/2309.14809).
