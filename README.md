@@ -20,11 +20,11 @@ Updates
 
 2023/09/28: HQ-SAM is in [ENIGMA-51](https://iplab.dmi.unict.it/ENIGMA-51/) for annotating egocentric industrial data, with SAM comparison in [paper](https://arxiv.org/abs/2309.14809).
 
-2023/08/16: HQ-SAM is in [segment-geospatial](https://github.com/opengeos/segment-geospatial) for segmenting geospatial data, and mask annotation tool [ISAT](https://github.com/yatengLG/ISAT_with_segment_anything), thanks their support!
+2023/08/16: HQ-SAM is in [segment-geospatial](https://github.com/opengeos/segment-geospatial) for segmenting geospatial data, and mask annotation tool [ISAT](https://github.com/yatengLG/ISAT_with_segment_anything)!
 
 2023/08/11: Support [python package](#quick-installation-via-pip) for easier **pip installation**.
 
-2023/07/25: Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/), thanks the support!
+2023/07/25: Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/)!
 
 2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support!
 
