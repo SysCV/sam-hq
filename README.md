@@ -288,12 +288,21 @@ Citation
 ---------------
 If you find HQ-SAM useful in your research or refer to the provided baseline results, please star :star: this repository and consider citing :pencil::
 ```
-@article{sam_hq,
+@inproceedings{sam_hq,
     title={Segment Anything in High Quality},
     author={Ke, Lei and Ye, Mingqiao and Danelljan, Martin and Liu, Yifan and Tai, Yu-Wing and Tang, Chi-Keung and Yu, Fisher},
-    journal = {arXiv:2306.01567},
+    booktitle = {NeurIPS},
     year = {2023}
 }  
+```
+Related high-quality instance segmentation work:
+```
+@inproceedings{transfiner,
+    title={Mask Transfiner for High-Quality Instance Segmentation},
+    author={Ke, Lei and Danelljan, Martin and Li, Xia and Tai, Yu-Wing and Tang, Chi-Keung and Yu, Fisher},
+    booktitle = {CVPR},
+    year = {2022}
+}
 ```
 
 ## Acknowledgments
