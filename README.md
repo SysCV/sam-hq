@@ -4,6 +4,7 @@
 <a href="https://colab.research.google.com/drive/1QwAbn5hsdqKOD5niuBzuqQX4eLCbNKFL?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 [![Huggingfaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sam-hq-team/sam-hq)
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/keleiwhu/sam-hq)
+[![Downloads](https://static.pepy.tech/badge/segment-anything-hq)](https://pepy.tech/project/segment-anything-hq)
 
 
 > [**Segment Anything in High Quality**](https://arxiv.org/abs/2306.01567)           
