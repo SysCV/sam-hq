@@ -15,7 +15,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-2023/12/04: Interested in the intersection of SAM and 3D Gaussian Splatting, see our new work [Gaussian Grouping](https://github.com/lkeab/gaussian-grouping)!
+2023/12/04: Interested in intersecting SAM and 3D Gaussian Splatting? See our new work [Gaussian Grouping](https://github.com/lkeab/gaussian-grouping)!
 
 2023/11/06: HQ-SAM is adopted to annotate the Grounding-anything Dataset proposed by [GLaMM](https://arxiv.org/abs/2311.03356).
 
