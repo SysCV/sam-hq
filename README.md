@@ -17,7 +17,7 @@ Updates
 -----------------
 :fire::fire: **SAM in 3D**: Interested in intersecting SAM and 3D Gaussian Splatting? See our new work [Gaussian Grouping](https://github.com/lkeab/gaussian-grouping)!
 
-2023/12/15: HQ-SAM is adopted in [Osprey](https://arxiv.org/abs/2312.10032) to provide fine-grained mask annotation.
+2023/12/15: HQ-SAM is adopted in [Osprey](https://arxiv.org/abs/2312.10032) to provide fine-grained mask annotation and also [CaR](https://torrvision.com/clip_as_rnn/) method.
 
 2023/11/06: HQ-SAM is adopted to annotate the Grounding-anything Dataset proposed by [GLaMM](https://arxiv.org/abs/2311.03356).
 
