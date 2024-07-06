@@ -15,7 +15,7 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 Updates
 -----------------
-:fire::fire: **SAM for Video Segmentation**: Interested in intersecting SAM and video segmentation? HQ-SAM is now supported by [DEVA](https://github.com/hkchengrex/Tracking-Anything-with-DEVA) in its text-prompted mode! Also check the CVPR work [MASA](https://github.com/siyuanliii/masa) for multi-object tracking with SAM.
+:fire::fire: **SAM for Video Segmentation**: Interested in intersecting SAM and video segmentation? HQ-SAM is supported by [DEVA](https://github.com/hkchengrex/Tracking-Anything-with-DEVA) in its text-prompted mode! Also, check the work [MASA](https://github.com/siyuanliii/masa) for multi-object tracking with SAM.
 
 :fire::fire: **SAM in 3D**: Interested in intersecting SAM and 3D Gaussian Splatting? See our new work [Gaussian Grouping](https://github.com/lkeab/gaussian-grouping)!
 
