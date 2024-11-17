@@ -1,4 +1,4 @@
-# SAM-HQ 2: Segment Anything in High Quality for Images and Videos    
+# HQ-SAM 2: Segment Anything in High Quality for Images and Videos    
 
 
 We propose **HQ-SAM2** to upgrade SAM2 to **higher quality** by extending our training strategy in [HQ-SAM](https://arxiv.org/abs/2306.01567). 
@@ -7,7 +7,7 @@ We propose **HQ-SAM2** to upgrade SAM2 to **higher quality** by extending our tr
 
 **2024/11/17 -- HQ-SAM 2 is released**
 
-- A new suite of improved model checkpoints (denoted as **SAM-HQ 2**, **beta-version**) are released. See [Model Description](#model-description) for details.
+- A new suite of improved model checkpoints (denoted as **HQ-SAM 2**, **beta-version**) are released. See [Model Description](#model-description) for details.
 
 ![HQ-SAM2 results comparison](assets/hq-sam2-results.png?raw=true)
 
@@ -70,7 +70,7 @@ from sam2.sam2_image_predictor import SAM2ImagePredictor
 # checkpoint = "./checkpoints/sam2.1_hiera_large.pt"
 # model_cfg = "configs/sam2.1/sam2.1_hiera_l.yaml"
 
-# Ours SAM-HQ2
+# Ours HQ-SAM 2
 checkpoint = "./checkpoints/sam2.1_hq_hiera_large.pt"
 model_cfg = "configs/sam2.1/sam2.1_hq_hiera_l.yaml"
 predictor = SAM2ImagePredictor(build_sam2(model_cfg, checkpoint))
@@ -97,7 +97,7 @@ from sam2.build_sam import build_sam2_hq_video_predictor
 # model_cfg = "configs/sam2.1/sam2.1_hiera_l.yaml"
 # predictor = build_sam2_video_predictor(model_cfg, checkpoint)
 
-# Ours SAM-HQ2
+# Ours HQ-SAM 2
 checkpoint = "./checkpoints/sam2.1_hq_hiera_large.pt"
 model_cfg = "configs/sam2.1/sam2.1_hq_hiera_l.yaml"
 predictor = build_sam2_hq_video_predictor(model_cfg, checkpoint)
