@@ -13,27 +13,28 @@
 
 We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer to our [paper](https://arxiv.org/abs/2306.01567) for more details.
 
+## Latest updates
+
+**2024/11/17 -- SAM-HQ 2 is released**
+
+- A new suite of improved model checkpoints (denoted as **SAM-HQ 2**, beta-version) are released. See [Model Description](sam-hq2/README.md) for details. Change working directory by `cd sam-hq2`
+
+![HQ-SAM2 results comparison](sam-hq2/assets/hq-sam2-results.png?raw=true)
+
 Updates
 -----------------
 :fire::fire: **SAM for Video Segmentation**: Interested in intersecting SAM and video? HQ-SAM is supported by [DEVA](https://github.com/hkchengrex/Tracking-Anything-with-DEVA) in its text-prompted mode! Also, check the work [MASA](https://github.com/siyuanliii/masa) and [SAM-PT](https://github.com/SysCV/sam-pt) with SAM.
 
 :fire::fire: **SAM in 3D**: Interested in intersecting SAM and 3D Gaussian Splatting? See our new work [Gaussian Grouping](https://github.com/lkeab/gaussian-grouping)! Also, if you are interested in intersecting SAM and NeRF, please see work [SANeRF-HQ](https://github.com/lyclyc52/SANeRF-HQ)!
 
-More: HQ-SAM is adopted in [Osprey](https://arxiv.org/abs/2312.10032), [CaR](https://torrvision.com/clip_as_rnn/), [SpatialRGPT](https://arxiv.org/abs/2406.01584) to provide fine-grained mask annotations.
+More: HQ-SAM is adopted in [Osprey](https://arxiv.org/abs/2312.10032), [CaR](https://torrvision.com/clip_as_rnn/), [SpatialRGPT](https://arxiv.org/abs/2406.01584), [GLaMM](https://arxiv.org/abs/2311.03356), [ENIGMA-51](https://iplab.dmi.unict.it/ENIGMA-51/) to provide fine-grained mask annotations.
 
-2023/11/06: HQ-SAM is adopted to annotate the Grounding-anything Dataset proposed by [GLaMM](https://arxiv.org/abs/2311.03356).
 
-2023/10/15: HQ-SAM is supported in the [OpenMMLab PlayGround](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md) for annotation with Label-Studio.
+Platform integration: HQ-SAM is supported in the [OpenMMLab PlayGround](https://github.com/open-mmlab/playground/blob/main/label_anything/readme.md) for annotation with Label-Studio, in [segment-geospatial](https://github.com/opengeos/segment-geospatial) for segmenting geospatial data, and mask annotation tool [ISAT](https://github.com/yatengLG/ISAT_with_segment_anything), and [Supervisely](https://supervisely.com/blog/segment-anything-in-high-quality-HQ-SAM/)!
 
-2023/09/28: HQ-SAM is in [ENIGMA-51](https://iplab.dmi.unict.it/ENIGMA-51/) for annotating egocentric industrial data, with SAM comparison in [paper](https://arxiv.org/abs/2309.14809).
+2023/08/11: Support [python package](#quick-installation-via-pip) for easier **pip installation**. Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/)!
 
-2023/08/16: HQ-SAM is in [segment-geospatial](https://github.com/opengeos/segment-geospatial) for segmenting geospatial data, and mask annotation tool [ISAT](https://github.com/yatengLG/ISAT_with_segment_anything)!
-
-2023/08/11: Support [python package](#quick-installation-via-pip) for easier **pip installation**.
-
-2023/07/25: Light HQ-SAM is in [EfficientSAM series](https://github.com/IDEA-Research/Grounded-Segment-Anything/tree/main/EfficientSAM) combining with [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything/)!
-
-2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support!
+<!-- 2023/07/21: HQ-SAM is also in OpenXLab apps, thanks their support! -->
 
 :rocket::rocket: 2023/07/17: We released **Light HQ-SAM** using TinyViT as backbone, for both fast and high-quality zero-shot segmentation, which reaches **41.2 FPS**. Refer to [Light HQ-SAM vs. MobileSAM](#light-hq-sam-vs-mobilesam-on-coco) for more details.
 
