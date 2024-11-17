@@ -121,7 +121,7 @@ Please refer to the examples in [video_predictor_example.ipynb](./notebooks/vide
 
 ### HQ-SAM 2 checkpoints
 
-The table below shows the **zero-shot** image segmentation performance of SAM2.1 and HQ-SAM 2 on **COCO (AP)** using same bounding box detector from Focal-net DINO. The FPS of SAM2.1 and SAM-HQ2 is on par.
+The table below shows the **zero-shot** image segmentation performance of SAM2.1 and HQ-SAM 2 on **COCO (AP)** using same bounding box detector from Focal-net DINO. The FPS speed of SAM2.1 and HQ-SAM 2 is on par.
 |      **Model**       | **Size (M)** | **Single Mode** | **Multi-Mode** |
 | :------------------: | :----------: | :-----------------: | :----------------: |
 |   sam2.1_hiera_large <br /> ([config](sam2/configs/sam2.1/sam2.1_hiera_l.yaml), [checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt))   |    224.4     |        50.0         |        48.3       |
