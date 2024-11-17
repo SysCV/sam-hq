@@ -15,9 +15,9 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 ## Latest updates
 
-**2024/11/17 -- SAM-HQ 2 is released**
+**2024/11/17 -- HQ-SAM 2 is released**
 
-- A new suite of improved model checkpoints (denoted as **SAM-HQ 2**, beta-version) are released. See [Model Description](sam-hq2/README.md) for details. Change working directory by `cd sam-hq2`
+- A new suite of improved model checkpoints (denoted as **HQ-SAM 2**, beta-version) are released. See [Model Description](sam-hq2/README.md) for details. Change working directory by `cd sam-hq2`
 
 ![HQ-SAM2 results comparison](sam-hq2/assets/hq-sam2-results.png?raw=true)
 

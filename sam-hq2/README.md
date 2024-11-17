@@ -5,7 +5,7 @@ We propose **HQ-SAM2** to upgrade SAM2 to **higher quality** by extending our tr
 
 ## Latest updates
 
-**2024/11/17 -- SAM-HQ 2 is released**
+**2024/11/17 -- HQ-SAM 2 is released**
 
 - A new suite of improved model checkpoints (denoted as **SAM-HQ 2**, **beta-version**) are released. See [Model Description](#model-description) for details.
 
