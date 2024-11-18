@@ -77,7 +77,7 @@ predictor = SAM2ImagePredictor(build_sam2(model_cfg, checkpoint))
 
 with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
     predictor.set_image(<your_image>)
-    masks, _, _ = predictor.predict(<input_prompts>)
+    masks, _, _ = predictor.predict(<input_prompts>, multimask_output=False)
 ```
 
 Please refer to the examples in [python demo/demo_hqsam2.py](./demo/demo_hqsam2.py) for details on how to add click or box prompts.
