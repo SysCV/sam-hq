@@ -134,7 +134,6 @@ The table below shows the **zero-shot** video object segmentation performance of
 |   sam2.1_hiera_large <br /> ([config](sam2/configs/sam2.1/sam2.1_hiera_l.yaml), [checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt))   |    224.4     |        89.8        |       74.6        |
 |   sam2.1_hq_hiera_large <br /> ([config](sam2/configs/sam2.1/sam2.1_hq_hiera_l.yaml), [checkpoint](https://huggingface.co/lkeab/hq-sam/resolve/main/sam2.1_hq_hiera_large.pt?download=true))   |    224.7     |        **91.0**        |       **74.7**        |
 
-\* Compile the model by setting `compile_image_encoder: True` in the config.
 
 
 ## License
