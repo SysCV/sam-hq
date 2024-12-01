@@ -127,7 +127,7 @@ The table below shows the **zero-shot** image segmentation performance of SAM2.1
 |   sam2.1_hiera_large <br /> ([config](sam2/configs/sam2.1/sam2.1_hiera_l.yaml), [checkpoint](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt))   |    224.4     |        50.0         |        48.3       |
 |   sam2.1_hq_hiera_large <br /> ([config](sam2/configs/sam2.1/sam2.1_hq_hiera_l.yaml), [checkpoint](https://huggingface.co/lkeab/hq-sam/resolve/main/sam2.1_hq_hiera_large.pt?download=true))   |    224.7     |        **50.9**         |        **50.4**       |
 
-The table below shows the **zero-shot** image segmentation AP performance of Grounded-SAM 2 and Grounded-HQ-SAM 2 on **Seginw (Segmentation in the Wild)** dataset.
+The table below shows the **zero-shot** image segmentation AP performance of Grounded-SAM 2 and Grounded-HQ-SAM 2 on [**Seginw (Segmentation in the Wild)** dataset](https://github.com/SysCV/sam-hq/tree/main/seginw).
 
 
 <table><tbody>
