@@ -95,6 +95,15 @@ bash test_seginw.sh
 bash test_seginw_hq.sh
 ```
 
+To evaluate sam2 and [sam-hq2](../sam-hq2/README.md)
+```
+# baseline Grounded SAM
+bash test_seginw_sam2.sh
+
+# Grounded HQ-SAM
+bash test_seginw_sam_hq2.sh
+```
+
 ### Example evaluation script on a single dataset
 ```
 python test_ap_on_seginw.py -c GroundingDINO/groundingdino/config/GroundingDINO_SwinB.py -p pretrained_checkpoint/groundingdino_swinb_cogcoor.pth --anno_path data/seginw/Airplane-Parts/valid/_annotations_min1cat.coco.json --image_dir data/seginw/Airplane-Parts/valid/ --use_sam_hq --save_json
