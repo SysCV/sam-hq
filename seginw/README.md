@@ -212,3 +212,103 @@ python test_ap_on_seginw.py -c GroundingDINO/groundingdino/config/GroundingDINO_
 </tr>
 <!-- ROW: maskformer2_swin_base_IN21k_384_bs16_50ep -->
 </tbody></table>
+
+The table below shows the **zero-shot** image segmentation AP performance of Grounded-SAM 2 and Grounded-HQ-SAM 2 on [**Seginw (Segmentation in the Wild)** dataset](https://github.com/SysCV/sam-hq/tree/main/seginw).
+
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom">Model Name</th>
+<th valign="bottom">SAM</th>
+<th valign="bottom">GroundingDINO</th>
+<th valign="bottom">Mean AP</th>
+<th valign="bottom">Airplane-Parts</th>
+<th valign="bottom">Bottles</th>
+<th valign="bottom">Brain-Tumor</th>
+<th valign="bottom">Chicken</th>
+<th valign="bottom">Cows</th>
+<th valign="bottom">Electric-Shaver</th>
+<th valign="bottom">Elephants</th>
+<th valign="bottom">Fruits</th>
+<th valign="bottom">Garbage</th>
+<th valign="bottom">Ginger-Garlic</th>
+<th valign="bottom">Hand-Metal</th>
+<th valign="bottom">Hand</th>
+<th valign="bottom">House-Parts</th>
+<th valign="bottom">HouseHold-Items</th>
+<th valign="bottom">Nutterfly-Squireel</th>
+<th valign="bottom">Phones</th>
+<th valign="bottom">Poles</th>
+<th valign="bottom">Puppies</th>
+<th valign="bottom">Rail</th>
+<th valign="bottom">Salmon-Fillet</th>
+<th valign="bottom">Strawberry</th>
+<th valign="bottom">Tablets</th>
+<th valign="bottom">Toolkits</th>
+<th valign="bottom">Trash</th>
+<th valign="bottom">Watermelon</th>
+<!-- TABLE BODY -->
+ <tr><td align="left">Grounded SAM2</td>
+<td align="center">vit-l</td>
+<td align="center">swin-b</td>
+<td align="center">49.5</td>
+<td align="center">38.3</td>
+<td align="center">67.1</td>
+<td align="center">12.1</td>
+<td align="center">80.7</td>
+<td align="center">52.8</td>
+<td align="center">72.0</td>
+<td align="center">78.2</td>
+<td align="center">83.3</td>
+<td align="center">26.0</td>
+<td align="center">45.7</td>
+<td align="center">73.7</td>
+<td align="center">77.6</td>
+<td align="center">8.6</td>
+<td align="center">60.1</td>
+<td align="center">84.1</td>
+<td align="center">34.6</td>
+<td align="center">28.8</td>
+<td align="center">48.9</td>
+<td align="center">14.3</td>
+<td align="center">24.2</td>
+<td align="center">83.7</td>
+<td align="center">29.1</td>
+<td align="center">20.1</td>
+<td align="center">28.4</td>
+<td align="center">66.0</td>
+</tr>
+
+ <tr><td align="left">Grounded HQ-SAM2</td>
+<td align="center">vit-l</td>
+<td align="center">swin-b</td>
+<td align="center"><b>50.0</b></td>
+<td align="center">38.6</td>
+<td align="center">66.8</td>
+<td align="center">12.0</td>
+<td align="center">81.0</td>
+<td align="center">52.8</td>
+<td align="center">71.9</td>
+<td align="center">77.2</td>
+<td align="center">83.3</td>
+<td align="center">26.1</td>
+<td align="center">45.5</td>
+<td align="center">74.8</td>
+<td align="center">79.0</td>
+<td align="center">8.6</td>
+<td align="center">60.1</td>
+<td align="center">84.7</td>
+<td align="center">34.3</td>
+<td align="center">25.5</td>
+<td align="center">48.9</td>
+<td align="center">14.1</td>
+<td align="center">34.1</td>
+<td align="center">85.7</td>
+<td align="center">29.2</td>
+<td align="center">21.5</td>
+<td align="center">28.9</td>
+<td align="center">66.6</td>
+
+</tr>
+</tbody></table>
