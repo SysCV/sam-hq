@@ -15,6 +15,8 @@ We propose HQ-SAM to upgrade SAM for high-quality zero-shot segmentation. Refer 
 
 ## Latest updates
 
+**2025/06** -- :fire::fire: HQ-SAM is supported in the [Huggingface Transformers](https://github.com/huggingface/transformers) library. Please see the detailed usage instruction [here](https://huggingface.co/docs/transformers/main/model_doc/sam_hq).
+
 **2024/11/17 -- HQ-SAM 2 is released**
 
 - A new suite of improved model checkpoints (denoted as **HQ-SAM 2**, beta-version) are released. See [Model Description](sam-hq2/README.md) for details. Change working directory by `cd sam-hq2`
