@@ -5,6 +5,7 @@
 # LICENSE file in the root directory of this source tree.
 
 import logging
+from pathlib import PurePath
 
 import torch
 from hydra import compose
@@ -56,7 +57,6 @@ def build_sam2(
     apply_postprocessing=True,
     **kwargs,
 ):
-
     if apply_postprocessing:
         hydra_overrides_extra = hydra_overrides_extra.copy()
         hydra_overrides_extra += [
@@ -66,6 +66,7 @@ def build_sam2(
             "++model.sam_mask_decoder_extra_args.dynamic_multimask_stability_thresh=0.98",
         ]
     # Read config and init model
+    config_file = _as_config_path(config_file)
     cfg = compose(config_name=config_file, overrides=hydra_overrides_extra)
     OmegaConf.resolve(cfg)
     model = instantiate(cfg.model, _recursive_=True)
@@ -88,6 +89,7 @@ def build_sam2_video_predictor(
     hydra_overrides = [
         "++model._target_=sam2.sam2_video_predictor.SAM2VideoPredictor",
     ]
+    config_file = _as_config_path(config_file)
     if apply_postprocessing:
         hydra_overrides_extra = hydra_overrides_extra.copy()
         hydra_overrides_extra += [
@@ -124,6 +126,7 @@ def build_sam2_hq_video_predictor(
     hydra_overrides = [
         "++model._target_=sam2.sam2_hq_video_predictor.SAM2HQVideoPredictor",
     ]
+    config_file = _as_config_path(config_file)
     if apply_postprocessing:
         hydra_overrides_extra = hydra_overrides_extra.copy()
         hydra_overrides_extra += [
@@ -179,3 +182,10 @@ def _load_checkpoint(model, ckpt_path):
             logging.error(unexpected_keys)
             raise RuntimeError()
         logging.info("Loaded checkpoint sucessfully")
+
+
+def _as_config_path(path):
+    if isinstance(path, PurePath):
+        # Hydra expects POSIX-style strings even on Windows.
+        return path.as_posix()
+    return path
