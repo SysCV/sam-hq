@@ -296,7 +296,7 @@ def get_args_parser():
     parser.add_argument('--dist_url', default='env://', help='url used to set up distributed training')
     parser.add_argument('--rank', default=0, type=int,
                         help='number of distributed processes')
-    parser.add_argument('--local_rank', type=int, help='local rank for dist')
+    parser.add_argument('--local-rank', '--local_rank', type=int, dest='local_rank', help='local rank for dist')
     parser.add_argument('--find_unused_params', action='store_true')
 
     parser.add_argument('--eval', action='store_true')
